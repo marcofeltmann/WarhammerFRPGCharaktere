@@ -1,0 +1,72 @@
+% TeXShop auf xelate und Unicode UTF 8 einstellen
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%% Store loaded files into log
+\listfiles
+
+%% Präambel
+\documentclass[16pt]{scrreprt}
+%% Will Robertson's fontspec.sty zum Einbinden von Systemschriften verwenden
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+%% Text in den Absätzen in der seltsamen Schreibschrift setzen
+\setromanfont[Mapping=tex-text]{Noteworthy}
+%% Überschriften im heidnisch angehauchten Stil verfassen
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Luminari}
+%% Ich bezweifle zwar, Monospaces zu benötigen, aber falls doch soll sie halbwegs hübsch sein
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+%% Darstellung der automatisch generierten Informationen gemäß neuer deutscher Rechtschreibung
+\usepackage[ngerman]{babel}
+
+%% Import von PDF Dateien, und zwar seitenweise.
+\usepackage{pdfpages}
+
+%% Import von Grafiken wie JPG und PNG
+\usepackage{graphicx}
+
+%% Hyperref für dokumentinterne Verknüpfungen
+\usepackage{hyperref}
+
+%% Metainformationen über das Dokument
+\title{Die Edda des Snorri}
+\author{Marco Feltmann}
+
+%% Datei dazu ermuntern einen Index für das Inhaltsverzeichnis zu verwalten
+\makeindex
+
+%% Neudefinition von \emph in fett weil Noteworthy leider keinen italic Schriftschnitt besitzt
+\let\emph\relax % there's no \RedeclareTextFontCommand
+\DeclareTextFontCommand{\emph}{\bfseries\em}
+
+
+%% Dokument beginnen
+\begin{document}
+
+%% Titelseite aus eigenes PDF einbinden
+\begin{titlepage}
+\includepdf{Images/titlepic.pdf}
+\end{titlepage}
+
+%% Inhaltsverzeichnis direkt hinten dran
+\tableofcontents
+
+%% Reihenweises Einbinden der einzelnen Kapitel
+\input{Textparts/Chapter01/chapter01.tex}
+\input{Textparts/Chapter02/chapter02.tex}
+
+%% Anhänge
+\appendix
+
+%% Der Charakterbogen, ohne den doch kein Rollenspiel auskommt
+\chapter{Charakterbogen}
+Dieser regelmäßig angepasste Charakterbogen dient einerseits dem Spielleiter als Unterstützung und ermöglicht andererseits dem Spieler die Möglichkeit, einen gegebenenfalls vergessenen Charakterbogen lediglich durch Zugriff auf das Internet innerhalb von Minuten zu ersetzen.
+
+Wahnsinn! Wunderwerk der Technik! Schwarze Magie! \emph{Verbrennt ihn!!!}
+
+%% Und nun noch einbinden…
+\includepdf[pages=-]{Images/albrecht_charactersheet.pdf}
+
+%% Dokument beenden
+\end{document}  
