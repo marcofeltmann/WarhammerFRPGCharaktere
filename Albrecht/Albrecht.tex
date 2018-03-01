@@ -1,0 +1,86 @@
+% TeXShop auf xelate und Unicode UTF 8 einstellen
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%% Store loaded files into log
+\listfiles
+
+%% Präambel
+\documentclass[fontsize=16pt]{scrreprt}
+%% Will Robertson's fontspec.sty zum Einbinden von Systemschriften verwenden
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+%% Text in den Absätzen in der seltsamen Schreibschrift setzen
+\setromanfont[Mapping=tex-text]{Noteworthy}
+%% Überschriften im heidnisch angehauchten Stil verfassen
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Snell Roundhand}
+%% Ich bezweifle zwar, Monospaces zu benötigen, aber falls doch soll sie halbwegs hübsch sein
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+%% Darstellung der automatisch generierten Informationen gemäß neuer deutscher Rechtschreibung
+\usepackage[ngerman]{babel}
+%% Zitate hübsch machen
+\usepackage[german=swiss]{csquotes}
+
+%% Import von PDF Dateien, und zwar seitenweise.
+\usepackage{pdfpages}
+
+%% Import von Grafiken wie JPG und PNG
+\usepackage{graphicx}
+
+%% Hyperref für dokumentinterne Verknüpfungen
+\usepackage{hyperref}
+
+%% Metainformationen über das Dokument
+\title{Die Heilenden Hände Shallyas}
+\author{Marco Feltmann}
+
+%% Datei dazu ermuntern einen Index für das Inhaltsverzeichnis zu verwalten
+\makeindex
+
+%% Neudefinition von \emph in fett weil Noteworthy leider keinen italic Schriftschnitt besitzt
+\let\emph\relax % there's no \RedeclareTextFontCommand
+\DeclareTextFontCommand{\emph}{\bfseries\em}
+
+
+%% Dokument beginnen
+\begin{document}
+
+%% Titelseite aus eigenes PDF einbinden
+\begin{titlepage}
+\includepdf{Images/titlepic.pdf}
+\end{titlepage}
+
+%% Inhaltsverzeichnis direkt hinten dran
+\tableofcontents
+
+%% Reihenweises Einbinden der einzelnen Kapitel
+\chapter{Es war einmal ein Kind…}
+\input{Textparts/01_DieZeitDavor/Hauptstruktur.tex}
+
+\chapter{Durch den Drakenwald}
+\input{Textparts/02_Drakenwald/Hauptstruktur.tex}
+
+%% Anhänge
+\appendix
+
+\newpage
+\includepdf{Images/appendixpic.pdf}
+\newpage
+
+\chapter{Die 10 Fragen}
+
+\input{Textparts/00_Vorgedanken/Fragen.tex}
+
+
+%% Der Charakterbogen, ohne den doch kein Rollenspiel auskommt
+\chapter{Charakterbogen}
+Dieser regelmäßig angepasste Charakterbogen dient einerseits dem Spielleiter als Unterstützung und gibt andererseits dem Spieler die Möglichkeit, einen gegebenenfalls vergessenen Charakterbogen lediglich durch Zugriff auf das Internet innerhalb von Minuten zu ersetzen.
+
+Wahnsinn! Wunderwerk der Technik! Schwarze Magie! \emph{Verbrennt ihn!!!}
+
+%% Und nun noch einbinden…
+\includepdf[pages=-]{Images/characterbogen_albrecht.pdf}
+
+%% Dokument beenden
+\end{document}  
