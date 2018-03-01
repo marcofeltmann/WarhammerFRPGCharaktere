@@ -1,0 +1,79 @@
+Einstiegskarriere: Laienpriester im Shallya-Orden
+
+Größe: 180cm (Wurf 8)
+Gewicht: 73kg (Wurf 37)
+Haarfarbe: Strohblond (Wurf 2)
+Augenfarbe: Purpur (Wurf 9)
+Unveränderliche Merkmale: seltsame Augenfarbe (purpur!!!), gebrochene Nase (Wurf 43), eingerissenes Ohr, merkwürdiger Geruch.
+Alter: 24 (Wurf 45)
+Geschwister: 1 Schwester (Wurf 1); (Karriere), Vater; (Karriere), Mutter; (Karriere)
+Sternzeichen: Rhyas Kessel (Wurf 86)
+Geburtsort: Middenland (Wurf 3), armselige Hütte (Wurf 10)
+Vorname: Albrecht (Wurf 000, also 10)
+Mensch. Männlich. 
+
+Hauptprofil
+Art: Startwert (Karriere) [Start-Aufstieg]
+KG: +26% (+5%)
+BF: +27% (+5%)
+ST: +26%
+WI: +30% (+5%)
+GE: +26%, permanent +5% durch Fertigkeit "Blitzschnelle Reflexe"
+IN: +31% (Shallyas Gnade statt +25%) (+10%)
+WK: +33% (+10%)
+CH: +25%, permanent +5% durch Fertigkeit "Einnehmendes Wesen" (+10%)
+
+ATT: 1
+LEB: 12 (+2) [13]
+STB: 2
+WIB: 3
+BEW: 4
+MAG: 0
+WAP: 0
+SCHP: 3
+
+Waffen: Herkunft (Werte)
+Kampfstab: Startausrüstung (TL 50, Gattung normal, Schaden +1, Betäubungsgeeignet = +10% ST bei Talent "Betäubender Schlag", defensiv = +10% bei Paradeversuchen)
+Dolch: Startausrüstung (TL 10, Gattung normal, Schaden +0)
+
+Fertigkeit: Herkunft
+Allgemeinbildung (Imperium): Rasse
+Klatsch: Rasse
+Sprache (Reikspiel): Rasse; +10%: Karriere
+Akademisches Wissen (Geschichte): Karriere
+Akademisches Wissen (Theologie): Karriere
+Charme: Karriere
+Heilen: Karriere, +10%: Shallya-Orden
+Lesen/Schreiben: Karriere
+Sprache (Klassisch): Karriere
+Wahrnehmung: Karriere
+
+Talent: Herkunft
+Adlerauge: Rasse (Wurf 05)
+Nachtsicht: Rasse (Wurf 62)
+Blitzschnelle Reflexe: Karriere
+Einnehmendes Wesen: Karriere
+Rhetorik: Karriere
+
+Ausrüstung: Herkunft
+Robe: Karriere; weiß ohne Kapuze: Shallyah-Orden
+Religiöses Symbol: Karriere; Herz aus Goldfaden an die linke Brust der Robe gestickt: Shallya-Orden 
+
+Hemd: Startausrüstung
+Hose: Startausrüstung
+Alte Stiefel: Startausrüstung
+Umhängetasche: Startausrüstung
+Decke: Startausrüstung
+Holzbecher: Startausrüstung
+Holzbesteck: Startausrüstung
+Abgetragener Mantel: Startausrüstung
+
+Geldkatze: Startausrüstung, mit erwürfelten 17 GK
+
+Geshoppt:von 17GK
+10x Heilsalbe für je 5G = 50G = 4S 2G: 16GK 15S 12G
+2x Ration (pro Woche) = 2GK 4S: 14GK 11S 12G
+Wasserschlauch 8S: 14GK 3S 12G
+Seil, 20 Schritt 1GK: 13GK 3S 12G
+Kochtopf, 1GK: 12GK 3S 12G
+Zunderkästchen 30S: 10GK 13S 12G 
